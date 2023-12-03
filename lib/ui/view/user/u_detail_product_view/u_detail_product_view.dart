@@ -33,7 +33,7 @@ class UDetailProductView extends BaseView<UDetailViewController> {
             children: [
               const Icon(Icons.card_travel_outlined),
               UIHelper.horizontalSpace(4),
-              AText.body('Thêm vào giỏ', color: AColor.white),
+              AText.body('Thêm món', color: AColor.white),
             ],
           ),
         ),

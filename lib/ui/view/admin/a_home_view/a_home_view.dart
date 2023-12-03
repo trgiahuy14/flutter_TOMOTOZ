@@ -26,13 +26,13 @@ class AHomeView extends StatelessWidget {
             Navigator.pushNamed(context, RoutePaths.aCategorView);
           }),
       ItemCategoryModel(
-          title: 'Đơn đặt hàng',
+          title: 'Hóa đơn',
           strAsset: AImage.order,
           onTap: () {
             locator<GetNavigation>().to(RoutePaths.aOrderView);
           }),
       ItemCategoryModel(
-          title: 'Người dùng',
+          title: 'Nhân viên',
           strAsset: AImage.user,
           onTap: () {
             locator<GetNavigation>().to(RoutePaths.aUserView);

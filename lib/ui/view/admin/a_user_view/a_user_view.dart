@@ -27,7 +27,7 @@ class AUserView extends BaseView<AUserViewController> {
 
   @override
   AppBar? appBar(BuildContext context) {
-    return AAppbar(title: 'Danh sách người dùng');
+    return AAppbar(title: 'Danh sách nhân viên');
   }
 
   Widget userCard(UserApp model) {

@@ -21,7 +21,7 @@ class UDetailOrderView extends BaseView<UDetailOrderViewController> {
 
   @override
   AppBar? appBar(BuildContext context) {
-    return AAppbar(title: 'Chi tiết đơn hàng');
+    return AAppbar(title: 'Chi tiết đơn đặt');
   }
 
   @override

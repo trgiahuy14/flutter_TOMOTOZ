@@ -79,7 +79,7 @@ class UCategoryView extends BaseView<UCategoryViewController> {
             ),
           )
         : Center(
-            child: AText.listItem('không có sản phẩm nào'),
+            child: AText.listItem('không có món ăn nào'),
           );
   }
 

@@ -21,13 +21,13 @@ class LoginController {
   void signIn(BuildContext context) async {
     if (_email == 'admin@gmail.com' && _password == 'admin') {
       locator<GetNavigation>().replaceTo(RoutePaths.loadingView);
-      logSuccess('Đăng nhập với tư cách admin');
+      logSuccess('Đăng nhập với tư cách admin, nhà bếp');
     } else {
       final AuthenticationService auth = AuthenticationService();
       await auth.signIn(_email ?? '', _password ?? '').then((value) {
         if (value == null) {
           locator<GetNavigation>().replaceTo(RoutePaths.loadingView);
-          logSuccess('Đăng nhập với tư cách người dùng');
+          logSuccess('Đăng nhập với tư cách nhân viên');
         } else {
           ADialog.show(context, content: value);
         }

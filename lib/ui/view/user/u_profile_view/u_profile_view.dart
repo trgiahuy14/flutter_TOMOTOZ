@@ -38,14 +38,14 @@ class UProfileView extends BaseView<UProfileViewController> {
         children: [
           AText.body('Email: ${user.email}'),
           ATextFormField(
-            label: 'Username',
+            label: 'Tên nhân viên',
             initValue: user.userName,
-            hintText: 'Nguyễn Nam',
+            hintText: '',
             onSaved: (v) => controller.userName=v,
           ),
           ATextFormField(
               label: 'PhoneNumber',
-              hintText: '12345678',
+              hintText: '+84',
               initValue: user.phoneNumber,
               keyboardType: TextInputType.phone,
                onSaved: (v) => controller.phoneNumber=v,

@@ -21,7 +21,7 @@ class UCartView extends BaseView<UCartViewController> {
   @override
   AppBar? appBar(BuildContext context) {
     return AAppbar(
-      title: 'Giỏ hàng',
+      title: 'Hóa đơn',
       suffix: IconButton(
         onPressed: () {
           controller.clearAll();
@@ -51,7 +51,7 @@ class UCartView extends BaseView<UCartViewController> {
                       if (locator<DataApp>().user.phoneNumber.isEmpty) {
                         locator<GetNavigation>().openDialog(
                             typeDialog: TypeDialog.waring,
-                            content: 'Bạn cần điền thông tin để thanh toán',
+                            content: 'Hãy nhập thông tin nhân viên',
                             onSubmit: () {
                               locator<GetNavigation>()
                                   .replaceTo(RoutePaths.uProfileView);
@@ -85,7 +85,7 @@ class UCartView extends BaseView<UCartViewController> {
     List<CartProduct> list = controller.listCartProduct;
     return list.isEmpty
         ? Center(
-            child: AText.listItem('Bạn không có món ăn trong giỏ hàng'),
+            child: AText.listItem('Hiện không có hóa đơn'),
           )
         : Column(
             children: [

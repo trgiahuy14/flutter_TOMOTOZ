@@ -63,7 +63,7 @@ class CartLocalData {
                 logError('Đã remove ');
               },
               content:
-                  'Bạn có chắc muốn xóa món ăn này ra khỏi giỏ hàng không?');
+                  'Bạn có chắc muốn xóa món ăn này ra khỏi hóa đơn không?');
         }
       }
     }
@@ -78,7 +78,7 @@ class CartLocalData {
     if (locator<DataApp>().listCart.isEmpty) {
       locator<GetNavigation>().openDialog(
           typeDialog: TypeDialog.waring,
-          content: 'Hiện bạn không có món ăn nào trong giỏ hàng');
+          content: 'Hiện bạn không có món ăn nào trong hóa đơn');
     } else {
       await locator<GetNavigation>().openDialog(
           typeDialog: TypeDialog.ask,
@@ -87,7 +87,7 @@ class CartLocalData {
             locator<GetNavigation>().back();
           },
           content:
-              'Bạn có chắc muốn xóa tất cả món ăn ra khỏi giỏ hàng không?');
+              'Bạn có chắc muốn xóa tất cả món ăn ra khỏi hóa đơn không?');
     }
   }
 
